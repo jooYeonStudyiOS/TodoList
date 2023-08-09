@@ -21,13 +21,12 @@ class TodoListViewController: UIViewController {
 
 extension TodoListViewController: UITableViewDataSource, UITableViewDelegate {
     func tableView(_ tableView: UITableView, numberOfRowsInSection section: Int) -> Int {
-        return 1
+        return todoList.count
     }
     
     func tableView(_ tableView: UITableView, cellForRowAt indexPath: IndexPath) -> UITableViewCell {
         let cell = todoListTableView.dequeueReusableCell(withIdentifier: "TodoListTableCell", for: indexPath) as! TodoListTableCell
-        cell.titleLabel.text = "test"
-        cell.complitedSwitch.isOn = false
+        cell.config(index: indexPath.row)
         
         return cell
     }

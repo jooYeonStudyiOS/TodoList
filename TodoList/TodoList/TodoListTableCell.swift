@@ -12,7 +12,8 @@ class TodoListTableCell: UITableViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var complitedSwitch: UISwitch!
     
-    override class func awakeFromNib() {
-        super.awakeFromNib()
+    func config(index: Int) {
+        titleLabel.text = todoList[index].title
+        complitedSwitch.isOn = todoList[index].isComplited
     }
 }
