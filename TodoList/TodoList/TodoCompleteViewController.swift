@@ -34,3 +34,13 @@ extension TodoCompleteViewController: UICollectionViewDataSource, UICollectionVi
         return cell
     }
 }
+
+//다이나믹 높이 설정
+//1행에 한 개만 나오도록 설정
+//이미지뷰? 도 넣어보기?
+
+extension TodoCompleteViewController: UICollectionViewDelegateFlowLayout {
+    func collectionView(_ collectionView: UICollectionView, layout collectionViewLayout: UICollectionViewLayout, sizeForItemAt indexPath: IndexPath) -> CGSize {
+        return CGSize(width: completedCollectionView.bounds.width, height: 150)
+    }
+}

@@ -17,7 +17,7 @@ struct TodoList {
 
 var todoList: [TodoList] = [
     TodoList(isComplited: true, title: "UILabel 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
-    TodoList(isComplited: false, title: "UIButton 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
+    TodoList(isComplited: true, title: "UIButton 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
     TodoList(isComplited: false, title: "UISwitch 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
     TodoList(isComplited: false, title: "UINavgation 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
     TodoList(isComplited: false, title: "UITableViewl, UITableViewController 공부하기", startDate: "0000-00-00", endDate: "1111-11-11", detail: "상세 설명"),
