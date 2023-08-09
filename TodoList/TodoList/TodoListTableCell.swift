@@ -13,7 +13,16 @@ class TodoListTableCell: UITableViewCell {
     @IBOutlet weak var complitedSwitch: UISwitch!
     
     func config(index: Int) {
+        
         titleLabel.text = todoList[index].title
         complitedSwitch.isOn = todoList[index].isComplited
+        
+        if !complitedSwitch.isOn {
+            contentView.backgroundColor = .white
+            titleLabel.textColor = .black
+        } else {
+            contentView.backgroundColor = .lightGray
+            titleLabel.textColor = .darkGray
+        }
     }
 }
