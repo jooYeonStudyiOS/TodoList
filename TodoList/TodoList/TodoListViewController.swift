@@ -16,6 +16,37 @@ class TodoListViewController: UIViewController {
         
         todoListTableView.dataSource = self
         todoListTableView.delegate = self
+        
+        insertListButton()
+    }
+    
+    func insertListButton() {
+        let button = UIBarButtonItem(title: "추가", style: .plain, target: self, action: #selector(insertLits))
+        navigationItem.rightBarButtonItem = button
+    }
+    
+    @objc func insertLits() {
+        
+        let alert = UIAlertController(title: "리스트 추가", message: "추가할 리스트를 작성해주세요", preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        
+        let insert = UIAlertAction(title: "추가", style: .default) {_ in
+            if let title = alert.textFields?[0].text, !title.isEmpty {
+                todoList.append(TodoList(isComplited: true, title: title, startDate: "3333-33-33", endDate: "4444-44-44", detail: "추가 디테일"))
+                self.todoListTableView.reloadData()
+            }
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(insert)
+        
+
+        alert.addTextField { (textFields) in
+            textFields.keyboardType = .alphabet
+        }
+        
+        present(alert, animated: false)
     }
 }
 
@@ -31,5 +62,3 @@ extension TodoListViewController: UITableViewDataSource, UITableViewDelegate {
         return cell
     }
 }
-
-
