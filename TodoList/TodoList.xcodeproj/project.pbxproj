@@ -13,6 +13,7 @@
 		0A376BE72A8389E5003A6A4E /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A376BE52A8389E5003A6A4E /* Main.storyboard */; };
 		0A376BE92A8389E6003A6A4E /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 0A376BE82A8389E6003A6A4E /* Assets.xcassets */; };
 		0A376BEC2A8389E6003A6A4E /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 0A376BEA2A8389E6003A6A4E /* LaunchScreen.storyboard */; };
+		0A376BF42A838C42003A6A4E /* Data.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A376BF32A838C42003A6A4E /* Data.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +25,7 @@
 		0A376BE82A8389E6003A6A4E /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		0A376BEB2A8389E6003A6A4E /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		0A376BED2A8389E6003A6A4E /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		0A376BF32A838C42003A6A4E /* Data.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Data.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -60,6 +62,7 @@
 				0A376BE12A8389E5003A6A4E /* SceneDelegate.swift */,
 				0A376BE32A8389E5003A6A4E /* TodoViewController.swift */,
 				0A376BE52A8389E5003A6A4E /* Main.storyboard */,
+				0A376BF32A838C42003A6A4E /* Data.swift */,
 				0A376BE82A8389E6003A6A4E /* Assets.xcassets */,
 				0A376BEA2A8389E6003A6A4E /* LaunchScreen.storyboard */,
 				0A376BED2A8389E6003A6A4E /* Info.plist */,
@@ -141,6 +144,7 @@
 				0A376BE42A8389E5003A6A4E /* TodoViewController.swift in Sources */,
 				0A376BE02A8389E5003A6A4E /* AppDelegate.swift in Sources */,
 				0A376BE22A8389E5003A6A4E /* SceneDelegate.swift in Sources */,
+				0A376BF42A838C42003A6A4E /* Data.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
