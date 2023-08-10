@@ -58,11 +58,13 @@ extension TodoListViewController {
                                      startDate: startDate,
                                      endDate: endDate,
                                      imageName: "cat"))
+            
+            //생각해 볼 것
+            //1) 일단 이 함수를 써서 갱신시켜도 되는지?
+            self.todoListTableView.reloadData()
         }
         
-        //생각해 볼 것
-        //1) 일단 이 함수를 써서 갱신시켜도 되는지?
-        self.todoListTableView.reloadData()
+
         
         alert.addAction(cancel)
         alert.addAction(insert)
