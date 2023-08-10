@@ -14,13 +14,15 @@ class TodoListTableCell: UITableViewCell {
     
     @IBAction func changeStyle(_ sender: UISwitch) {
         changeStyle(isOn: sender.isOn)
+
+        todoList[sender.tag].isComplited = sender.isOn
     }
     
-    
     func config(index: Int) {
-        
         titleLabel.text = todoList[index].title
+        
         complitedSwitch.isOn = todoList[index].isComplited
+        complitedSwitch.tag = index
         
         changeStyle(isOn: todoList[index].isComplited)
     }

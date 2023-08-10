@@ -64,11 +64,8 @@ extension TodoListViewController {
             self.todoListTableView.reloadData()
         }
         
-
-        
         alert.addAction(cancel)
         alert.addAction(insert)
-        
         
         alert.addTextField { (textFields) in
             textFields.keyboardType = .alphabet
