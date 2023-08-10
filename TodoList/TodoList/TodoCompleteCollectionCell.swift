@@ -22,6 +22,5 @@ class TodoCompleteCollectionCell: UICollectionViewCell {
         let imageName = todoList[index].imageName
         let image = UIImage(named: imageName)
         imageView.image = image
-        imageView.contentMode = .scaleAspectFit
     }
 }
