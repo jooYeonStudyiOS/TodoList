@@ -32,6 +32,14 @@ extension TodoListViewController: UITableViewDataSource, UITableViewDelegate {
         
         return cell
     }
+    
+    func tableView(_ tableView: UITableView, didSelectRowAt indexPath: IndexPath) {
+        guard let detailVC = storyboard?.instantiateViewController(identifier: "TodoDetailViewController") as? TodoDetailViewController else { return }
+        
+        detailVC.index = indexPath.row
+        
+        navigationController?.pushViewController(detailVC, animated: true)
+    }
 }
 
 extension TodoListViewController {
