@@ -33,7 +33,7 @@ class TodoListViewController: UIViewController {
         
         let insert = UIAlertAction(title: "추가", style: .default) {_ in
             if let title = alert.textFields?[0].text, !title.isEmpty {
-                todoList.append(TodoList(isComplited: false, title: title, startDate: "3333-33-33", endDate: "4444-44-44", detail: "추가 디테일"))
+                todoList.append(TodoList(isComplited: false, title: title, startDate: "3333-33-33", endDate: "4444-44-44", imageName: "추가 디테일"))
                 //생각해 볼 것
                 //1) 일단 이 함수를 써서 갱신시켜도 되는지?
                 //2) viewDidLoad에서 메소드를 호출해도 되는지?

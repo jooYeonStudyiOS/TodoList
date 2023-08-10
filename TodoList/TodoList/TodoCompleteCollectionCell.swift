@@ -12,12 +12,16 @@ class TodoCompleteCollectionCell: UICollectionViewCell {
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
-    @IBOutlet weak var detailLabel: UILabel!
-   
+    @IBOutlet weak var imageView: UIImageView!
+    
     func config(index: Int) {
         titleLabel.text = todoList[index].title
         startDateLabel.text = todoList[index].startDate
         endDateLabel.text = todoList[index].endDate
-        detailLabel.text = todoList[index].detail
+          
+        let imageName = todoList[index].imageName
+        let image = UIImage(named: imageName)
+        imageView.image = image
+        imageView.contentMode = .scaleAspectFit
     }
 }
