@@ -61,5 +61,6 @@ class TodoDetailViewController: UIViewController {
         guard let endDate = dateFormatter.date(from: endDateString) else { return }
 
         endDateLabel.textColor = date.compare(endDate) == .orderedDescending ? .red : .black
+        endDateLabel.text = "서두르세요! 얼마 안 남았습니다! \t \(endDateString)"
     }
 }
