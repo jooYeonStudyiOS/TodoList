@@ -17,18 +17,16 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eit-eh-afT">
-                                <rect key="frame" x="136" y="258" width="121" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="eit-eh-afT">
+                                <rect key="frame" x="0.0" y="258" width="393" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="할 일 확인하기"/>
                                 <connections>
                                     <segue destination="URR-vg-LQg" kind="show" id="5p2-2J-VgL"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKr-T6-rBx">
-                                <rect key="frame" x="136" y="363" width="121" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="aKr-T6-rBx">
+                                <rect key="frame" x="0.0" y="363" width="393" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="완료한 일 보기"/>
                                 <connections>
@@ -38,12 +36,20 @@
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="6Tk-OE-BBY"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="eit-eh-afT" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="43P-xh-Sqs"/>
+                            <constraint firstItem="eit-eh-afT" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="HAH-49-S88"/>
+                            <constraint firstItem="aKr-T6-rBx" firstAttribute="top" secondItem="eit-eh-afT" secondAttribute="bottom" constant="70" id="N49-jx-Et1"/>
+                            <constraint firstItem="aKr-T6-rBx" firstAttribute="width" secondItem="8bC-Xf-vdC" secondAttribute="width" id="Zld-1B-8cm"/>
+                            <constraint firstItem="eit-eh-afT" firstAttribute="top" secondItem="6Tk-OE-BBY" secondAttribute="top" constant="155" id="lWG-k5-KyU"/>
+                            <constraint firstItem="aKr-T6-rBx" firstAttribute="centerX" secondItem="6Tk-OE-BBY" secondAttribute="centerX" id="rvh-qS-gbG"/>
+                        </constraints>
                     </view>
                     <navigationItem key="navigationItem" id="68V-eQ-zno"/>
                 </viewController>
                 <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
             </objects>
-            <point key="canvasLocation" x="376" y="-100"/>
+            <point key="canvasLocation" x="374.80916030534348" y="-100"/>
         </scene>
         <!--Todo Complete View Controller-->
         <scene sceneID="itx-Ar-nTh">
