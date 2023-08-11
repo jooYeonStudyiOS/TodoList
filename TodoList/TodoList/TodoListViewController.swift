@@ -99,7 +99,6 @@ extension TodoListViewController {
 extension TodoListViewController: ReloadTableViewDelegate {
     
     func reloadTableView() {
-        print("asdfasfafsdasdfasdfasdf")
         todoListTableView.reloadData()
     }
 }

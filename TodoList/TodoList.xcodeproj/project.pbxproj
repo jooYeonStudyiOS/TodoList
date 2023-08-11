@@ -19,6 +19,7 @@
 		0A376BFA2A83AC90003A6A4E /* TodoCompleteViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A376BF92A83AC90003A6A4E /* TodoCompleteViewController.swift */; };
 		0A376BFC2A83ADEE003A6A4E /* TodoCompleteCollectionCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A376BFB2A83ADEE003A6A4E /* TodoCompleteCollectionCell.swift */; };
 		0A376BFE2A84E7B3003A6A4E /* TodoDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A376BFD2A84E7B3003A6A4E /* TodoDetailViewController.swift */; };
+		0A8E44FF2A85DCB300942974 /* TodoUpdateViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 0A8E44FE2A85DCB300942974 /* TodoUpdateViewController.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -36,6 +37,7 @@
 		0A376BF92A83AC90003A6A4E /* TodoCompleteViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCompleteViewController.swift; sourceTree = "<group>"; };
 		0A376BFB2A83ADEE003A6A4E /* TodoCompleteCollectionCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoCompleteCollectionCell.swift; sourceTree = "<group>"; };
 		0A376BFD2A84E7B3003A6A4E /* TodoDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoDetailViewController.swift; sourceTree = "<group>"; };
+		0A8E44FE2A85DCB300942974 /* TodoUpdateViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TodoUpdateViewController.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -75,6 +77,7 @@
 				0A376BF52A839309003A6A4E /* TodoListViewController.swift */,
 				0A376BF72A8396BC003A6A4E /* TodoListTableCell.swift */,
 				0A376BFD2A84E7B3003A6A4E /* TodoDetailViewController.swift */,
+				0A8E44FE2A85DCB300942974 /* TodoUpdateViewController.swift */,
 				0A376BF92A83AC90003A6A4E /* TodoCompleteViewController.swift */,
 				0A376BFB2A83ADEE003A6A4E /* TodoCompleteCollectionCell.swift */,
 				0A376BF32A838C42003A6A4E /* Data.swift */,
@@ -156,6 +159,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				0A8E44FF2A85DCB300942974 /* TodoUpdateViewController.swift in Sources */,
 				0A376BFA2A83AC90003A6A4E /* TodoCompleteViewController.swift in Sources */,
 				0A376BE42A8389E5003A6A4E /* TodoViewController.swift in Sources */,
 				0A376BE02A8389E5003A6A4E /* AppDelegate.swift in Sources */,

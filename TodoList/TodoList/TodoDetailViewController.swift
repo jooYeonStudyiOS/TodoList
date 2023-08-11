@@ -32,7 +32,9 @@ class TodoDetailViewController: UIViewController {
     var index: Int = 0
     
     @IBAction func modifyList(_ sender: Any) {
-        
+        let modifyVC = storyboard?.instantiateViewController(withIdentifier: "TodoUpdateViewController") as! TodoUpdateViewController
+        modifyVC.index = index
+        navigationController?.pushViewController(modifyVC, animated: false)
     }
     
     @IBAction func deleteList(_ sender: Any) {
