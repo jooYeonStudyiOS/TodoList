@@ -27,6 +27,10 @@ class TodoUpdateViewController: UIViewController {
     }
     
     @IBAction func updateButton(_ sender: Any) {
+        todoList[index].startDate = newStartDate
+        todoList[index].deadlineDate = newDeadlineDate
+        
+        navigationController?.popViewController(animated: false)
     }
     
     var index: Int = 0
@@ -79,20 +83,22 @@ class TodoUpdateViewController: UIViewController {
         view.addSubview(datePicker)
     }
     
-    @objc func onDidChangeStartDate(sender: UIDatePicker) -> String {
+    @objc func onDidChangeStartDate(sender: UIDatePicker) {
         let selectedDate: String = formatter.string(from: sender.date)
         startDateLabel.text = selectedDate
         
+        newStartDate = selectedDate
+        
         dismiss(animated: false)
         sender.isHidden = true
-        
-        return selectedDate
     }
     
     @objc func onDidChangeDeadlineDate(sender: UIDatePicker) {
         let selectedDate: String = formatter.string(from: sender.date)
         deadlineDateLabel.text = selectedDate
-
+        
+        newDeadlineDate = selectedDate
+        
         dismiss(animated: false)
         sender.isHidden = true
     }
