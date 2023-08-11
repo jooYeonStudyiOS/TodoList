@@ -16,6 +16,7 @@ class TodoUpdateViewController: UIViewController {
     
     @IBAction func titleUpdateButton(_ sender: Any) {
         titleTextField.isEnabled = true
+        titleTextField.backgroundColor = .white
     }
     
     @IBAction func startDateUpdateButton(_ sender: Any) {
@@ -27,16 +28,24 @@ class TodoUpdateViewController: UIViewController {
     }
     
     @IBAction func updateButton(_ sender: Any) {
-        todoList[index].startDate = newStartDate
-        todoList[index].deadlineDate = newDeadlineDate
+        todoList[index].title = newTitle == "" ? oldTitle : newTitle
+        todoList[index].startDate = newStartDate == "" ? oldStartDate : newStartDate
+        todoList[index].deadlineDate = newDeadlineDate == "" ? oldDeadlineDate : newDeadlineDate
         
         navigationController?.popViewController(animated: false)
     }
     
     var index: Int = 0
+    
+    var oldTitle: String = ""
     var newTitle: String = ""
+    
+    var oldStartDate = ""
     var newStartDate: String = ""
+    
+    var oldDeadlineDate: String = ""
     var newDeadlineDate: String = ""
+    
     var formatter: DateFormatter = DateFormatter()
     
     override func viewDidLoad() {
@@ -44,16 +53,22 @@ class TodoUpdateViewController: UIViewController {
         
         formatter.dateFormat = "yyyy-MM-dd"
         
+        titleTextField.delegate = self
+        
         config()
     }
     
     func config() {
-        titleTextField.text = todoList[index].title
+        oldTitle = todoList[index].title
+        titleTextField.text = oldTitle
         titleTextField.isEnabled = false
+        titleTextField.backgroundColor = .lightGray
         
-        startDateLabel.text = todoList[index].startDate
+        oldStartDate = todoList[index].startDate
+        startDateLabel.text = oldStartDate
         
-        deadlineDateLabel.text = todoList[index].deadlineDate
+        oldDeadlineDate = todoList[index].deadlineDate
+        deadlineDateLabel.text = oldDeadlineDate
     }
     
     func setupStartDatePicker() {
@@ -101,5 +116,15 @@ class TodoUpdateViewController: UIViewController {
         
         dismiss(animated: false)
         sender.isHidden = true
+    }
+}
+
+extension TodoUpdateViewController: UITextFieldDelegate {
+    func textFieldShouldReturn(_ textField: UITextField) -> Bool {
+        titleTextField.resignFirstResponder()
+    }
+    func textFieldDidEndEditing(_ textField: UITextField) {
+        guard let title = textField.text else { return }
+        newTitle = title
     }
 }
