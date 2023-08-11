@@ -7,7 +7,12 @@
 
 import UIKit
 
+protocol ReloadTableViewDelegate {
+    func reloadTableView()
+}
+
 class TodoDetailViewController: UIViewController {
+    
     
     @IBOutlet weak var detailStackView: UIStackView!
     
@@ -22,7 +27,30 @@ class TodoDetailViewController: UIViewController {
     @IBOutlet weak var modifyButton: UIButton!
     @IBOutlet weak var deleteButton: UIButton!
     
+    var delegate : ReloadTableViewDelegate?
+    
     var index: Int = 0
+    
+    @IBAction func modifyList(_ sender: Any) {
+        
+    }
+    
+    @IBAction func deleteList(_ sender: Any) {
+        let alert = UIAlertController(title: "삭제하시겠습니까?", message: nil, preferredStyle: .alert)
+        
+        let cancel = UIAlertAction(title: "취소", style: .cancel)
+        let delete = UIAlertAction(title: "삭제", style: .default) {_ in
+            todoList.remove(at: self.index)
+            self.delegate?.reloadTableView()
+            self.navigationController?.popViewController(animated: true)
+
+        }
+        
+        alert.addAction(cancel)
+        alert.addAction(delete)
+        
+        present(alert, animated: false)
+    }
     
     override func viewDidLoad() {
         super.viewDidLoad()

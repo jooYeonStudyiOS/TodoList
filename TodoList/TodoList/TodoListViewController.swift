@@ -37,6 +37,7 @@ extension TodoListViewController: UITableViewDataSource, UITableViewDelegate {
         guard let detailVC = storyboard?.instantiateViewController(identifier: "TodoDetailViewController") as? TodoDetailViewController else { return }
         
         detailVC.index = indexPath.row
+        detailVC.delegate = self
         
         navigationController?.pushViewController(detailVC, animated: true)
     }
@@ -94,3 +95,12 @@ extension TodoListViewController {
         present(alert, animated: false)
     }
 }
+
+extension TodoListViewController: ReloadTableViewDelegate {
+    
+    func reloadTableView() {
+        print("asdfasfafsdasdfasdfasdf")
+        todoListTableView.reloadData()
+    }
+}
+

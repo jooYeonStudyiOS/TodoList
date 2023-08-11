@@ -246,11 +246,17 @@
                                 <rect key="frame" x="10" y="204" width="373" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="수정하기"/>
+                                <connections>
+                                    <action selector="modifyList:" destination="zz4-kg-zdG" eventType="touchUpInside" id="XMR-hk-1L1"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="dka-3w-i5r">
                                 <rect key="frame" x="10" y="259" width="373" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="삭제하기"/>
+                                <connections>
+                                    <action selector="deleteList:" destination="zz4-kg-zdG" eventType="touchUpInside" id="XX5-eu-Cn2"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="Qw8-o3-FEQ"/>
