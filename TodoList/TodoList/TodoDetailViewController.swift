@@ -19,6 +19,9 @@ class TodoDetailViewController: UIViewController {
     @IBOutlet weak var deadlineDateView: UIView!
     @IBOutlet weak var endDateView: UIView!
     
+    @IBOutlet weak var modifyButton: UIButton!
+    @IBOutlet weak var deleteButton: UIButton!
+    
     var index: Int = 0
     
     override func viewDidLoad() {
@@ -32,6 +35,9 @@ class TodoDetailViewController: UIViewController {
         setupStartDateLabel()
         setupDeadlineDateLabel()
         setupEndDateLabel()
+        
+        setupModifyButton()
+        setupDeleteButton()
     }
     
     func setupTitleLabel() {
@@ -72,6 +78,16 @@ class TodoDetailViewController: UIViewController {
         } else {
             endDateView.isHidden = true
         }
+    }
+    
+    func setupModifyButton() {
+        modifyButton.backgroundColor = .systemOrange
+        modifyButton.tintColor = .black
+    }
+    
+    func setupDeleteButton() {
+        deleteButton.backgroundColor = .systemYellow
+        deleteButton.tintColor = .black
     }
 
     func checkDeadlineDate() {

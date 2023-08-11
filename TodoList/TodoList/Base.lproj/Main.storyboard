@@ -283,9 +283,11 @@
                     <connections>
                         <outlet property="deadlineDateLabel" destination="P2N-sR-8GW" id="2qF-Nn-83q"/>
                         <outlet property="deadlineDateView" destination="Xhh-W5-p1y" id="NP3-64-n9z"/>
+                        <outlet property="deleteButton" destination="dka-3w-i5r" id="pD6-0Y-vo5"/>
                         <outlet property="detailStackView" destination="d93-Lb-Ta3" id="Cud-vr-Fer"/>
                         <outlet property="endDateLabel" destination="ccp-7u-7VY" id="Xna-SM-hH3"/>
                         <outlet property="endDateView" destination="yG3-cQ-xaj" id="stN-gg-d7l"/>
+                        <outlet property="modifyButton" destination="c29-R5-Ivw" id="GNu-7Q-ey9"/>
                         <outlet property="startDateLabel" destination="Gjs-wt-zmj" id="qiT-qb-o6z"/>
                         <outlet property="titleLabel" destination="AS5-FF-o97" id="AwN-kd-yc0"/>
                     </connections>
