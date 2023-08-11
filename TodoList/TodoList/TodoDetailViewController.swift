@@ -13,7 +13,11 @@ class TodoDetailViewController: UIViewController {
     
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var startDateLabel: UILabel!
+    @IBOutlet weak var deadlineDateLabel: UILabel!
     @IBOutlet weak var endDateLabel: UILabel!
+    
+    @IBOutlet weak var deadlineDateView: UIView!
+    @IBOutlet weak var endDateView: UIView!
     
     var index: Int = 0
     
@@ -26,6 +30,7 @@ class TodoDetailViewController: UIViewController {
     func config() {
         setupTitleLabel()
         setupStartDateLabel()
+        setupDeadlineDateLabel()
         setupEndDateLabel()
     }
     
@@ -44,23 +49,43 @@ class TodoDetailViewController: UIViewController {
         startDateLabel.textAlignment = .right
     }
     
-    func setupEndDateLabel() {
-        endDateLabel.text = todoList[index].endDate
-        endDateLabel.textAlignment = .right
+    func setupDeadlineDateLabel() {
+        if !todoList[index].isComplited {
+            deadlineDateView.isHidden = false
+            
+            deadlineDateLabel.text = todoList[index].deadlineDate
+            deadlineDateLabel.textAlignment = .right
+            
+            checkDeadlineDate()
+        } else {
+            deadlineDateView.isHidden = true
+        }
         
-        if !todoList[index].isComplited { checkEndDate() }
     }
     
-    func checkEndDate() {
-        let date = Date()
-        let endDateString = todoList[index].endDate
+    func setupEndDateLabel() {
+        if todoList[index].isComplited {
+            //스택뷰에서 isHidden하면 자동정렬해주지 않았던가..?
+            endDateView.isHidden = false
+            
+            endDateLabel.text = todoList[index].endDate
+            endDateLabel.textAlignment = .right
+        } else {
+            endDateView.isHidden = true
+        }
+    }
+
+    func checkDeadlineDate() {
+        let today = Date()
+        let deadlineDateString = todoList[index].deadlineDate
         
         let dateFormatter = DateFormatter()
          dateFormatter.dateFormat = "yyyy-MM-dd"
         
-        guard let endDate = dateFormatter.date(from: endDateString) else { return }
-
-        endDateLabel.textColor = date.compare(endDate) == .orderedDescending ? .red : .black
-        endDateLabel.text = "서두르세요! 얼마 안 남았습니다! \t \(endDateString)"
+        guard let deadlineDate = dateFormatter.date(from: deadlineDateString) else { return }
+        
+        if today >= deadlineDate {
+            deadlineDateLabel.textColor = .red
+        }
     }
 }
