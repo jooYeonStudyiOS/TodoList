@@ -65,7 +65,6 @@ class TodoDetailViewController: UIViewController {
     
     func setupEndDateLabel() {
         if todoList[index].isComplited {
-            //스택뷰에서 isHidden하면 자동정렬해주지 않았던가..?
             endDateView.isHidden = false
             
             endDateLabel.text = todoList[index].endDate
