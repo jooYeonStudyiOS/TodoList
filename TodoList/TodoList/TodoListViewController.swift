@@ -58,13 +58,14 @@ extension TodoListViewController {
         let insert = UIAlertAction(title: "추가", style: .default) {_ in
             guard let title = alert.textFields?[0].text, !title.isEmpty else { return }
             guard let startDate = alert.textFields?[1].text, !startDate.isEmpty else { return }
-            guard let endDate = alert.textFields?[2].text, !endDate.isEmpty else { return }
+            guard let deadlineDate = alert.textFields?[2].text, !deadlineDate.isEmpty else { return }
             
             //원래라면 image도 입력받아야 하지만 일단 패스..
             todoList.append(TodoList(isComplited: false,
                                      title: title,
                                      startDate: startDate,
-                                     endDate: endDate,
+                                     deadlineDate: deadlineDate,
+                                     endDate: "",
                                      imageName: "cat"))
             
             //생각해 볼 것
@@ -87,7 +88,7 @@ extension TodoListViewController {
         
         alert.addTextField { (textFields) in
             textFields.keyboardType = .alphabet
-            textFields.placeholder = "종료 날짜"
+            textFields.placeholder = "종료 예정 날짜"
         }
         
         present(alert, animated: false)

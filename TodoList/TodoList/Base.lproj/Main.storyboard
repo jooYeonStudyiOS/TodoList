@@ -85,53 +85,61 @@
                                                     <nil key="textColor"/>
                                                     <nil key="highlightedColor"/>
                                                 </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="tEj-bJ-Oi5">
-                                                    <rect key="frame" x="10" y="45" width="373" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="HjG-kE-SJ9"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
-                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="End date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="5Iw-5v-vmO">
-                                                    <rect key="frame" x="10" y="75" width="373" height="20"/>
-                                                    <constraints>
-                                                        <constraint firstAttribute="height" constant="20" id="3DJ-ba-WKv"/>
-                                                    </constraints>
-                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
-                                                    <nil key="textColor"/>
-                                                    <nil key="highlightedColor"/>
-                                                </label>
                                                 <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="Di2-As-Rbu">
-                                                    <rect key="frame" x="10" y="105" width="373" height="203"/>
+                                                    <rect key="frame" x="10" y="108" width="373" height="200"/>
                                                     <constraints>
-                                                        <constraint firstAttribute="width" constant="300" id="SAW-YC-cGg"/>
+                                                        <constraint firstAttribute="width" constant="373" id="JQd-uG-kmP"/>
                                                         <constraint firstAttribute="height" constant="200" id="Xx8-qD-TDq"/>
                                                     </constraints>
                                                 </imageView>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작 날짜 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="vHT-lt-zrV">
+                                                    <rect key="frame" x="10" y="45" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="start date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="Exq-eu-bQ9">
+                                                    <rect key="frame" x="97" y="45" width="73.333333333333314" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종료 날짜 : " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="syM-ba-YVE">
+                                                    <rect key="frame" x="10" y="76" width="77" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
+                                                <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="end date" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="qF8-PZ-a9U">
+                                                    <rect key="frame" x="97" y="76" width="67" height="21"/>
+                                                    <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                                                    <nil key="textColor"/>
+                                                    <nil key="highlightedColor"/>
+                                                </label>
                                             </subviews>
                                             <constraints>
+                                                <constraint firstItem="Exq-eu-bQ9" firstAttribute="top" secondItem="vHT-lt-zrV" secondAttribute="top" id="77b-wR-MGa"/>
+                                                <constraint firstItem="syM-ba-YVE" firstAttribute="leading" secondItem="vHT-lt-zrV" secondAttribute="leading" id="Cd3-ob-6B7"/>
                                                 <constraint firstItem="Xzw-8W-pM0" firstAttribute="top" secondItem="AON-JQ-SK7" secondAttribute="top" constant="15" id="Go7-2p-J4M"/>
-                                                <constraint firstItem="tEj-bJ-Oi5" firstAttribute="top" secondItem="Xzw-8W-pM0" secondAttribute="bottom" constant="10" id="JLN-Qh-z1z"/>
+                                                <constraint firstItem="syM-ba-YVE" firstAttribute="top" secondItem="vHT-lt-zrV" secondAttribute="bottom" constant="10" id="LWJ-Uo-esQ"/>
                                                 <constraint firstItem="Xzw-8W-pM0" firstAttribute="leading" secondItem="AON-JQ-SK7" secondAttribute="leading" constant="10" id="MsA-LW-sWd"/>
+                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="trailing" secondItem="Xzw-8W-pM0" secondAttribute="trailing" id="PYE-fK-pQr"/>
+                                                <constraint firstItem="vHT-lt-zrV" firstAttribute="leading" secondItem="Xzw-8W-pM0" secondAttribute="leading" id="Pnk-Kr-MRW"/>
                                                 <constraint firstAttribute="trailing" secondItem="Xzw-8W-pM0" secondAttribute="trailing" constant="10" id="RQW-9J-4xz"/>
-                                                <constraint firstAttribute="trailing" secondItem="5Iw-5v-vmO" secondAttribute="trailing" constant="10" id="Vms-Ye-O1E"/>
-                                                <constraint firstItem="5Iw-5v-vmO" firstAttribute="top" secondItem="tEj-bJ-Oi5" secondAttribute="bottom" constant="10" id="ZXF-St-QVM"/>
-                                                <constraint firstItem="5Iw-5v-vmO" firstAttribute="leading" secondItem="AON-JQ-SK7" secondAttribute="leading" constant="10" id="awQ-hY-oVP"/>
-                                                <constraint firstAttribute="trailing" secondItem="tEj-bJ-Oi5" secondAttribute="trailing" constant="10" id="lRT-Wg-f03"/>
-                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="top" secondItem="5Iw-5v-vmO" secondAttribute="bottom" constant="10" id="n6S-gd-SIi"/>
-                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="leading" secondItem="5Iw-5v-vmO" secondAttribute="leading" id="rNL-qm-ELM"/>
-                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="trailing" secondItem="5Iw-5v-vmO" secondAttribute="trailing" id="vpk-Rr-TZ4"/>
-                                                <constraint firstItem="tEj-bJ-Oi5" firstAttribute="leading" secondItem="AON-JQ-SK7" secondAttribute="leading" constant="10" id="yyO-08-wAa"/>
+                                                <constraint firstItem="qF8-PZ-a9U" firstAttribute="top" secondItem="syM-ba-YVE" secondAttribute="top" id="X2u-1O-Dah"/>
+                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="top" secondItem="syM-ba-YVE" secondAttribute="bottom" constant="11" id="aXD-dv-mKT"/>
+                                                <constraint firstItem="Di2-As-Rbu" firstAttribute="leading" secondItem="syM-ba-YVE" secondAttribute="leading" id="exc-hW-pue"/>
+                                                <constraint firstItem="vHT-lt-zrV" firstAttribute="top" secondItem="Xzw-8W-pM0" secondAttribute="bottom" constant="10" id="m6e-DF-Uiz"/>
+                                                <constraint firstItem="Exq-eu-bQ9" firstAttribute="leading" secondItem="vHT-lt-zrV" secondAttribute="trailing" constant="10" id="sOI-6n-9SP"/>
+                                                <constraint firstItem="qF8-PZ-a9U" firstAttribute="leading" secondItem="Exq-eu-bQ9" secondAttribute="leading" id="svV-J7-1ph"/>
                                                 <constraint firstAttribute="bottom" secondItem="Di2-As-Rbu" secondAttribute="bottom" constant="10" id="zp7-M1-GNn"/>
                                             </constraints>
                                         </collectionViewCellContentView>
                                         <size key="customSize" width="393" height="318"/>
                                         <connections>
-                                            <outlet property="endDateLabel" destination="5Iw-5v-vmO" id="WyP-PL-QPI"/>
+                                            <outlet property="endDateLabel" destination="qF8-PZ-a9U" id="LEh-5c-kgn"/>
                                             <outlet property="imageView" destination="Di2-As-Rbu" id="vkE-Xn-hZB"/>
-                                            <outlet property="startDateLabel" destination="tEj-bJ-Oi5" id="wzc-xh-pie"/>
+                                            <outlet property="startDateLabel" destination="Exq-eu-bQ9" id="l8E-A4-DgH"/>
                                             <outlet property="titleLabel" destination="Xzw-8W-pM0" id="oVH-EY-0WJ"/>
                                         </connections>
                                     </collectionViewCell>
