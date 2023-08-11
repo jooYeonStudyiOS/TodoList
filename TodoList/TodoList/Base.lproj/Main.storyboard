@@ -310,83 +310,110 @@
                         <rect key="frame" x="0.0" y="0.0" width="393" height="852"/>
                         <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
                         <subviews>
-                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" fixedFrame="YES" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-dJ-RXP">
-                                <rect key="frame" x="30" y="171" width="342" height="34"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <textField opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="248" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" clearButtonMode="whileEditing" translatesAutoresizingMaskIntoConstraints="NO" id="xRZ-dJ-RXP">
+                                <rect key="frame" x="10" y="111.33333333333331" width="373" height="34"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                 <textInputTraits key="textInputTraits"/>
                             </textField>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-43-bki">
-                                <rect key="frame" x="28" y="135" width="29" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="title" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ehF-43-bki">
+                                <rect key="frame" x="10" y="69" width="29" height="32.333333333333343"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시작 날짜 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-8F-jRr">
-                                <rect key="frame" x="28" y="234" width="68" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작 날짜 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="8GL-8F-jRr">
+                                <rect key="frame" x="10" y="175.33333333333334" width="68" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="종료 예정 날짜 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWU-5V-U9h">
-                                <rect key="frame" x="30" y="325" width="102" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종료 예정 날짜 " textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="mWU-5V-U9h">
+                                <rect key="frame" x="10" y="269.33333333333331" width="102" height="33"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="시작 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sn-zq-cal">
-                                <rect key="frame" x="30" y="269" width="64" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="시작 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="6sn-zq-cal">
+                                <rect key="frame" x="10" y="218.33333333333334" width="373" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" fixedFrame="YES" text="종료 예정 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML2-3k-fNS">
-                                <rect key="frame" x="30" y="359" width="97" height="21"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="종료 예정 날짜" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="ML2-3k-fNS">
+                                <rect key="frame" x="10" y="312.33333333333331" width="373" height="21"/>
                                 <fontDescription key="fontDescription" type="system" pointSize="17"/>
                                 <nil key="textColor"/>
                                 <nil key="highlightedColor"/>
                             </label>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdp-I0-TwL">
-                                <rect key="frame" x="104" y="227" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Wdp-I0-TwL">
+                                <rect key="frame" x="63" y="173.33333333333334" width="49" height="35"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.line" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="startDateUpdateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="olj-FG-agV"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw4-pJ-aMx">
-                                <rect key="frame" x="140" y="317" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-t4-ItB">
+                                <rect key="frame" x="29" y="67" width="49" height="34.333333333333343"/>
                                 <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="수정"/>
-                                <connections>
-                                    <action selector="deadlineDateUpdateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="eqL-SN-Vcu"/>
-                                </connections>
-                            </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="ERU-t4-ItB">
-                                <rect key="frame" x="76" y="128" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
-                                <state key="normal" title="Button"/>
-                                <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.line" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
                                 <connections>
                                     <action selector="titleUpdateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="Ykr-6F-afl"/>
                                 </connections>
                             </button>
-                            <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhO-eu-CWS">
-                                <rect key="frame" x="174" y="487" width="54" height="35"/>
-                                <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhO-eu-CWS">
+                                <rect key="frame" x="169.66666666666666" y="421" width="54" height="35"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="확인"/>
+                                <connections>
+                                    <action selector="updateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="kNC-PW-AiS"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="jw4-pJ-aMx">
+                                <rect key="frame" x="97" y="267.33333333333331" width="49" height="35"/>
+                                <state key="normal" title="Button"/>
+                                <buttonConfiguration key="configuration" style="plain" image="pencil.line" catalog="system">
+                                    <color key="baseForegroundColor" white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                                </buttonConfiguration>
+                                <connections>
+                                    <action selector="deadlineDateUpdateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="eqL-SN-Vcu"/>
+                                </connections>
                             </button>
                         </subviews>
                         <viewLayoutGuide key="safeArea" id="z1p-Z6-hCp"/>
                         <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                        <constraints>
+                            <constraint firstItem="jw4-pJ-aMx" firstAttribute="leading" secondItem="mWU-5V-U9h" secondAttribute="trailing" constant="-15" id="0UP-eO-ErQ"/>
+                            <constraint firstItem="GhO-eu-CWS" firstAttribute="centerX" secondItem="z1p-Z6-hCp" secondAttribute="centerX" id="4Ba-F3-kvl"/>
+                            <constraint firstItem="ML2-3k-fNS" firstAttribute="top" secondItem="mWU-5V-U9h" secondAttribute="bottom" constant="10" id="7de-Ug-UPu"/>
+                            <constraint firstItem="ML2-3k-fNS" firstAttribute="trailing" secondItem="xRZ-dJ-RXP" secondAttribute="trailing" id="9Vb-J2-vKo"/>
+                            <constraint firstItem="ERU-t4-ItB" firstAttribute="bottom" secondItem="ehF-43-bki" secondAttribute="bottom" id="9Y1-uH-Na9"/>
+                            <constraint firstItem="Wdp-I0-TwL" firstAttribute="bottom" secondItem="8GL-8F-jRr" secondAttribute="bottom" id="9tK-Rn-KyR"/>
+                            <constraint firstItem="z1p-Z6-hCp" firstAttribute="trailing" secondItem="xRZ-dJ-RXP" secondAttribute="trailing" constant="10" id="Etb-FH-lNe"/>
+                            <constraint firstItem="ML2-3k-fNS" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="leading" id="IXh-9N-B2R"/>
+                            <constraint firstItem="6sn-zq-cal" firstAttribute="top" secondItem="8GL-8F-jRr" secondAttribute="bottom" constant="10" id="JjC-5V-RpN"/>
+                            <constraint firstItem="jw4-pJ-aMx" firstAttribute="top" secondItem="mWU-5V-U9h" secondAttribute="top" constant="-2" id="Mgs-3j-det"/>
+                            <constraint firstItem="jw4-pJ-aMx" firstAttribute="bottom" secondItem="mWU-5V-U9h" secondAttribute="bottom" id="N1h-TM-9eK"/>
+                            <constraint firstItem="ehF-43-bki" firstAttribute="top" secondItem="z1p-Z6-hCp" secondAttribute="top" constant="10" id="WAu-6Y-yBV"/>
+                            <constraint firstItem="xRZ-dJ-RXP" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="leading" id="YjY-id-ZO4"/>
+                            <constraint firstItem="6sn-zq-cal" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="leading" id="bIU-SG-UDb"/>
+                            <constraint firstItem="GhO-eu-CWS" firstAttribute="centerY" secondItem="z1p-Z6-hCp" secondAttribute="centerY" id="cNP-NB-Yfg"/>
+                            <constraint firstItem="ehF-43-bki" firstAttribute="leading" secondItem="z1p-Z6-hCp" secondAttribute="leading" constant="10" id="eQl-P6-zfF"/>
+                            <constraint firstItem="ERU-t4-ItB" firstAttribute="top" secondItem="ehF-43-bki" secondAttribute="top" constant="-2" id="fG1-HN-Fo7"/>
+                            <constraint firstItem="Wdp-I0-TwL" firstAttribute="top" secondItem="8GL-8F-jRr" secondAttribute="top" constant="-2" id="fwz-IP-22l"/>
+                            <constraint firstItem="8GL-8F-jRr" firstAttribute="top" secondItem="xRZ-dJ-RXP" secondAttribute="bottom" constant="30" id="kCS-HL-HxF"/>
+                            <constraint firstItem="mWU-5V-U9h" firstAttribute="top" secondItem="6sn-zq-cal" secondAttribute="bottom" constant="30" id="mhK-Pj-pP7"/>
+                            <constraint firstItem="Wdp-I0-TwL" firstAttribute="leading" secondItem="8GL-8F-jRr" secondAttribute="trailing" constant="-15" id="nIv-H7-V8b"/>
+                            <constraint firstItem="6sn-zq-cal" firstAttribute="trailing" secondItem="xRZ-dJ-RXP" secondAttribute="trailing" id="sGv-DD-6Se"/>
+                            <constraint firstItem="xRZ-dJ-RXP" firstAttribute="top" secondItem="ehF-43-bki" secondAttribute="bottom" constant="10" id="tIV-tz-54z"/>
+                            <constraint firstItem="8GL-8F-jRr" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="leading" id="uWe-CA-ih1"/>
+                            <constraint firstItem="ERU-t4-ItB" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="trailing" constant="-10" id="xmd-Rs-zUT"/>
+                            <constraint firstItem="mWU-5V-U9h" firstAttribute="leading" secondItem="ehF-43-bki" secondAttribute="leading" id="yFx-EN-X7F"/>
+                        </constraints>
                     </view>
                     <connections>
                         <outlet property="deadlineDateLabel" destination="ML2-3k-fNS" id="dj0-nl-bYS"/>
@@ -486,6 +513,7 @@
         </scene>
     </scenes>
     <resources>
+        <image name="pencil.line" catalog="system" width="128" height="98"/>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
         </systemColor>

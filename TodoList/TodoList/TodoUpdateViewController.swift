@@ -15,6 +15,7 @@ class TodoUpdateViewController: UIViewController {
     @IBOutlet weak var deadlineDateLabel: UILabel!
     
     @IBAction func titleUpdateButton(_ sender: Any) {
+        titleTextField.isEnabled = true
     }
     
     @IBAction func startDateUpdateButton(_ sender: Any) {
@@ -23,7 +24,13 @@ class TodoUpdateViewController: UIViewController {
     @IBAction func deadlineDateUpdateButton(_ sender: Any) {
     }
     
+    @IBAction func updateButton(_ sender: Any) {
+    }
+    
     var index: Int = 0
+    var newTitle: String = ""
+    var newStartDate: String = ""
+    var newDeadlineDate: String = ""
     
     override func viewDidLoad() {
         super.viewDidLoad()
@@ -33,9 +40,10 @@ class TodoUpdateViewController: UIViewController {
     
     func config() {
         titleTextField.text = todoList[index].title
-
+        titleTextField.isEnabled = false
         
         startDateLabel.text = todoList[index].startDate
+        
         deadlineDateLabel.text = todoList[index].deadlineDate
     }
 }
