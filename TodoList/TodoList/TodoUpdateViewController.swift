@@ -14,6 +14,9 @@ class TodoUpdateViewController: UIViewController {
     @IBOutlet weak var startDateLabel: UILabel!
     @IBOutlet weak var deadlineDateLabel: UILabel!
     
+    @IBAction func titleUpdateButton(_ sender: Any) {
+    }
+    
     @IBAction func startDateUpdateButton(_ sender: Any) {
     }
     
@@ -30,6 +33,8 @@ class TodoUpdateViewController: UIViewController {
     
     func config() {
         titleTextField.text = todoList[index].title
+
+        
         startDateLabel.text = todoList[index].startDate
         deadlineDateLabel.text = todoList[index].deadlineDate
     }

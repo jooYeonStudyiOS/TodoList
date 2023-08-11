@@ -374,6 +374,9 @@
                                 <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                                 <state key="normal" title="Button"/>
                                 <buttonConfiguration key="configuration" style="plain" title="수정"/>
+                                <connections>
+                                    <action selector="titleUpdateButton:" destination="Nfo-KL-vqj" eventType="touchUpInside" id="Ykr-6F-afl"/>
+                                </connections>
                             </button>
                             <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GhO-eu-CWS">
                                 <rect key="frame" x="174" y="487" width="54" height="35"/>
