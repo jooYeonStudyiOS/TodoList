@@ -19,9 +19,11 @@ class TodoUpdateViewController: UIViewController {
     }
     
     @IBAction func startDateUpdateButton(_ sender: Any) {
+        setupStartDatePicker()
     }
     
     @IBAction func deadlineDateUpdateButton(_ sender: Any) {
+        setupDeadlineDatePicker()
     }
     
     @IBAction func updateButton(_ sender: Any) {
@@ -31,9 +33,12 @@ class TodoUpdateViewController: UIViewController {
     var newTitle: String = ""
     var newStartDate: String = ""
     var newDeadlineDate: String = ""
+    var formatter: DateFormatter = DateFormatter()
     
     override func viewDidLoad() {
         super.viewDidLoad()
+        
+        formatter.dateFormat = "yyyy-MM-dd"
         
         config()
     }
@@ -45,5 +50,50 @@ class TodoUpdateViewController: UIViewController {
         startDateLabel.text = todoList[index].startDate
         
         deadlineDateLabel.text = todoList[index].deadlineDate
+    }
+    
+    func setupStartDatePicker() {
+        //y 포지션 값을 조금 더 ..잘 구하는 방법이 없을까
+        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 250, width: view.frame.width, height: 200))
+        datePicker.backgroundColor = .white
+        datePicker.datePickerMode = .date
+    
+        guard let startDate = formatter.date(from: todoList[index].startDate) else { return }
+        datePicker.setDate(startDate, animated: false)
+        
+        datePicker.addTarget(self, action: #selector(onDidChangeStartDate(sender:)), for: .valueChanged)
+        
+        view.addSubview(datePicker)
+    }
+    
+    func setupDeadlineDatePicker() {
+        let datePicker = UIDatePicker(frame: CGRect(x: 0, y: 350, width: view.frame.width, height: 200))
+        datePicker.backgroundColor = .white
+        datePicker.datePickerMode = .date
+    
+        guard let deadlineDate = formatter.date(from: todoList[index].deadlineDate) else { return }
+        datePicker.setDate(deadlineDate, animated: false)
+        
+        datePicker.addTarget(self, action: #selector(onDidChangeDeadlineDate(sender:)), for: .valueChanged)
+        
+        view.addSubview(datePicker)
+    }
+    
+    @objc func onDidChangeStartDate(sender: UIDatePicker) -> String {
+        let selectedDate: String = formatter.string(from: sender.date)
+        startDateLabel.text = selectedDate
+        
+        dismiss(animated: false)
+        sender.isHidden = true
+        
+        return selectedDate
+    }
+    
+    @objc func onDidChangeDeadlineDate(sender: UIDatePicker) {
+        let selectedDate: String = formatter.string(from: sender.date)
+        deadlineDateLabel.text = selectedDate
+
+        dismiss(animated: false)
+        sender.isHidden = true
     }
 }
